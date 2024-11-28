@@ -133,7 +133,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
-    "https://simple-django-proj-6d2134b75d76.herokuapp.com:8000"
+    "https://simple-django-proj-6d2134b75d76.herokuapp.com"
 ]
 
 # Optionally, allow all origins (not recommended for production)
