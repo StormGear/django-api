@@ -10,6 +10,9 @@ from rest_framework.request import Request
 
 # Create your views here.
 
+def home(request):
+    return render(request, 'home.html')
+
 @api_view(['GET', 'POST'])
 def users_list(request: Request):
     """
