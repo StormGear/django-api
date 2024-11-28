@@ -31,7 +31,8 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "simple-django-proj-6d2134b75d76.herokuapp.com"
+    "simple-django-proj-6d2134b75d76.herokuapp.com",
+    "127.0.0.1"
 ]
 
 
@@ -135,7 +136,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://sub.example.com",
     "http://localhost:8000",
     "http://127.0.0.1:8000",
-    "https://simple-django-proj-6d2134b75d76.herokuapp.com"
+    "https://simple-django-proj-6d2134b75d76.herokuapp.com",
 ]
 
 # Optionally, allow all origins (not recommended for production)
