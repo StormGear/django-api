@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http.response import JsonResponse
 from rest_framework.parsers import JSONParser
+from django.http import HttpResponse as HTMLResponse
 from rest_framework import status
 from drf_yasg.utils import swagger_auto_schema
 from users.models import User
@@ -11,8 +12,12 @@ from rest_framework.views import APIView
 from drf_yasg import openapi
 
 
-# Create your views here.
 
+# Create your views here.
+@swagger_auto_schema(
+    operation_description="Welcome to the Simple Django REST API.",
+    responses={200: HTMLResponse},
+)
 def home(request):
     return render(request, 'home.html')
 
