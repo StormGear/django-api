@@ -32,7 +32,9 @@ DEBUG = os.getenv('DEBUG')
 
 ALLOWED_HOSTS = [
     "simple-django-proj-6d2134b75d76.herokuapp.com",
-    "127.0.0.1"
+    "127.0.0.1",
+    ".vercel.app", 
+    ".now.sh"
 ]
 
 

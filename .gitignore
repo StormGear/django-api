@@ -25,3 +25,4 @@ staticfiles
 
 # VS Code
 .vscode/
+.vercel
