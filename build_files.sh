@@ -3,6 +3,11 @@
 # Install python3 and pip
 echo "Building the project"
 python3 --version
+echo "Use a virtual environment"
+python3 -m venv venv
+source venv/bin/activate
+
+echo "Installing requirements"
 python3 -m pip install -r requirements.txt
 
 echo "Migrating database"
